@@ -1,0 +1,30 @@
+body {
+  color: #18191f;
+}
+
+.text-black-secondary {
+  color: rgba(24, 25, 31, 0.5);
+}
+
+.font-h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.font-h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.font-h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.bg-green-primary {
+  background-color: #effff7;
+}
+
+.bg-black-primary {
+  background-color: #0b0d17;
+}

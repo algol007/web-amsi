@@ -1,0 +1,13 @@
+{
+  "name": "amsi",
+  "version": "1.0.0",
+  "description": "AMSI Landing Page",
+  "main": "index.js",
+  "author": "Ady Rahmansyah",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  }
+}
