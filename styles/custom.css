@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
+  font-family: "Inter", sans-serif;
   color: #18191f;
 }
 
@@ -25,6 +28,25 @@ body {
   background-color: #effff7;
 }
 
+.text-green-primary {
+  color: #24b56e;
+}
+
 .bg-black-primary {
   background-color: #0b0d17;
+}
+
+@media only screen and (max-width: 600px) {
+  .font-h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .font-h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .font-h3 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
 }
