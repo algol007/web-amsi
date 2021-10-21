@@ -32,8 +32,22 @@ body {
   color: #24b56e;
 }
 
+.bg-green-secondary {
+  background-color: #24b56e;
+}
+
 .bg-black-primary {
   background-color: #0b0d17;
+}
+
+.button-daftar {
+  background-color: #ffffff;
+  color: #24b56e;
+}
+
+.button-daftar:hover {
+  background-color: #24b56e;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 600px) {

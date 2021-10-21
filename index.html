@@ -9,7 +9,7 @@
   <title>Muslim Startup ID</title>
 </head>
 <body>
-  <header class="fixed top-0 w-full z-10 bg-green-primary shadow-xl">
+  <header id="header" class="fixed top-0 w-full z-10 hidden lg:block">
     <div class="relative container mx-auto px-4 md:px-8 lg:px-0">
       <nav class="py-6">
         <div class="flex w-full justify-between items-center">
@@ -25,8 +25,33 @@
               <li class="mx-4"><a href="#">Member</a></li>          
             </ul>
           </div>
-          <button class="bg-white py-2 px-6 rounded shadow">Daftar Sekarang</button>
+          <button class="py-3 px-6 rounded shadow button-daftar">Daftar Sekarang</button>
         </div>
+      </nav>
+    </div>
+  </header>
+
+  <header class="fixed top-0 w-full z-10 lg:hidden bg-green-primary shadow-xl">
+    <div class="relative container mx-auto px-4 md:px-8 lg:px-0">
+      <nav class="py-6">
+        <div class="flex w-full justify-between items-center">
+          <a href="#" class="w-48">
+            <img src="./assets/logo.png" alt="Logo AMSI">
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" onclick="showNavbar()" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+        <ul id="navbar" class="text-center mt-8 hidden">
+          <li class="py-2"><a href="#">About</a></li>
+          <li class="py-2"><a href="#">Tujuan</a></li>
+          <li class="py-2"><a href="#">Panelis</a></li>
+          <li class="py-2"><a href="#">Acara</a></li>
+          <li class="py-2"><a href="#">Member</a></li> 
+          <li class="my-4">
+            <button class="py-3 px-6 rounded shadow button-daftar">Daftar Sekarang</button>
+          </li>         
+        </ul>
       </nav>
     </div>
   </header>
@@ -36,8 +61,15 @@
       <div class="w-full lg:w-1/2 lg:pr-20 flex items-center mt-40 px-4 md:px-8 lg:px-0">
         <div>
           <h1 class="font-h1">Ayo Ikut AMSI Ta’aruf Startup</h1>
-          <p class="text-lg">InsyaAllah kami bisa membantu kamu para Entrepeneur yang berpassion dan bersemangat untuk membawa perubahan ke dunia yang lebih baik</p>
-          <button>Apa itu AMSI Taaruf Startup</button>
+          <p class="text-lg mb-4">InsyaAllah kami bisa membantu kamu para Entrepeneur yang berpassion dan bersemangat untuk membawa perubahan ke dunia yang lebih baik</p>
+          <a href="#" class="bg-green-secondary text-white py-3 pl-6 pr-4 rounded flex items-center w-max">
+            <span>
+              Apa itu AMSI Taaruf Startup
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13l-5 5m0 0l-5-5m5 5V6" />
+            </svg>
+          </a>
         </div>
       </div>
       <div class="hidden lg:block w-1/2 absolute top-0 right-0" style="width: 600px;">
@@ -48,23 +80,26 @@
 
   <section id="social-media" class="container mx-auto py-16 px-4 md:px-8 lg:px-0">
     <div class="flex flex-col md:flex-row">
-      <div class="w-full lg:w-1/3">
+      <div class="w-full lg:w-1/3 mb-6 md:mb-0">
         <div class="flex items-baseline">
-          <h3 class="font-h2">700k</h3><span>People</span>
+          <h3 class="font-h2">700k</h3><span class="ml-2">People</span>
         </div>
-        <div>
+        <div class="flex items-center">
+          <img src="./assets/telegram.png" alt="Telegram" class="w-8 h-8 mr-2">
           <span>Telegram Forum</span>
         </div>
       </div>
-      <div class="w-full lg:w-1/3">
+      <div class="w-full lg:w-1/3 mb-6 md:mb-0">
         <h3 class="font-h2">2.4m</h3>
-        <div>
+        <div class="flex items-center">
+          <img src="./assets/whatsapp.png" alt="Whatsapp" class="w-8 h-8 mr-2">
           <span>Whatsapp Member</span>
         </div>
       </div>
-      <div class="w-full lg:w-1/3">
+      <div class="w-full lg:w-1/3 mb-6 md:mb-0">
         <h3 class="font-h2">100k</h3>
-        <div>
+        <div class="flex items-center">
+          <img src="./assets/user.png" alt="User" class="w-8 h-8 mr-2">        
           <span>Startup Member Associates</span>
         </div>
       </div>
@@ -76,11 +111,18 @@
       <div class="w-full md:w-1/2">
         <img src="./assets/about.png" alt="About Image" /></div>
       <div class="w-full md:w-1/2">
-        <h2 class="font-h3">AMSI Ta’aruf Startup</h2>
+        <h2 class="font-h3 mb-6">AMSI Ta’aruf Startup</h2>
         <div class="font-lg">
-          <p>Suatu wadah bagi para pengusaha-pengusaha muslim untuk berhimpun, bertukar pikiran, memperluas jaringan dan tentunya dapat mengelola usaha rintisannya sesuai dengan Alquran dan Sunnah yang pada akhirnya dapat menumbuhkan ekonomi ummat dan mengharapkan ridho Allah SWT.</p>
-          <p>Untuk itu ASOSIASI MUSLIM STARTUP INDONESIA (AMSI), mengadakan AMSI TA'ARUF STARTUP yang diselenggarakan secara virtual dan berseri setiap pekan</p>
-          <a href="#">Get started</a>
+          <p class="mb-4">Suatu wadah bagi para pengusaha-pengusaha muslim untuk berhimpun, bertukar pikiran, memperluas jaringan dan tentunya dapat mengelola usaha rintisannya sesuai dengan Alquran dan Sunnah yang pada akhirnya dapat menumbuhkan ekonomi ummat dan mengharapkan ridho Allah SWT.</p>
+          <p class="mb-4">Untuk itu ASOSIASI MUSLIM STARTUP INDONESIA (AMSI), mengadakan AMSI TA'ARUF STARTUP yang diselenggarakan secara virtual dan berseri setiap pekan</p>
+          <a href="#" class="flex items-center">
+            <span class="text-green-primary">
+              Get started
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-green-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -278,5 +320,24 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    const header = document.getElementById("header");
+    const navbar = document.getElementById("navbar");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        header.classList.add("bg-green-primary", "shadow-xl");
+      } else {
+        header.classList.remove("bg-green-primary", "shadow-xl");
+      }
+    };
+
+    function showNavbar() {
+      navbar.classList.toggle('hidden');
+    }
+
+  </script>
 </body>
 </html>
